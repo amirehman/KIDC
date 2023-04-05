@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: '29LT Bukra';
+}
+
+body {
+  /* overf */
+}
+
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('./fonts/29LTBukra-Bold.woff2') format('woff2'),
+      url('./fonts/29LTBukra-Bold.woff') format('woff'),
+      url('./fonts/29LTBukra-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('./fonts/29LTBukra-BoldItalic.woff2') format('woff2'),
+      url('./fonts/29LTBukra-BoldItalic.woff') format('woff'),
+      url('./fonts/29LTBukra-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '29LT Bukra';
+  src: url('./fonts/29LTBukra-Light.woff2') format('woff2'),
+      url('./fonts/29LTBukra-Light.woff') format('woff'),
+      url('./fonts/29LTBukra-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.t-container-md {
+  @apply max-w-screen-md 2xl:max-w-7xl mx-auto px-5;
+}
+
+.t-container {
+  @apply max-w-screen-xl 2xl:max-w-7xl mx-auto px-5;
+}
+
+.t-container-xl {
+  @apply max-w-screen-xl 2xl:max-w-7xl mx-auto px-5;
+}
+.here {
+  @apply w-32 h-10 bg-red-500;
+}
+
+.dotted-lines::before {
+  content: "";
+  background-image: url(./images/icons/dot.png);
+  @apply block w-[0.4rem] h-full right-0 top-0 absolute bg-contain bg-repeat-y m-1;
+}
+
+.dotted-lines::after {
+  content: "";
+  background-image: url(./images/icons/dash.png);
+  @apply block w-[0.35rem] h-full right-[0.7rem] top-0 absolute bg-contain bg-repeat-y m-1;
+}
+
+
+.curner-box {
+  --all:0px;
+  --b:pink;
+  
+  display:inline-block;
+  margin:10px;
+  border:2px solid var(--b);
+  background:
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
+     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
+     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2px)   ,transparent 0) top right   /50% 50%,
+     var(--img,transparent);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  -webkit-mask:
+     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+   -webkit-mask-size:50.5% 50.5%;
+   -webkit-mask-repeat:no-repeat;
+}
+.curner-box.border-thin {
+  border:1px solid var(--b);
+  background:
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 1px) ,transparent 0) bottom left /50% 50%,
+     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
+     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1px)    ,transparent 0) top left    /50% 50%,
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 1px)   ,transparent 0) top right   /50% 50%,
+     var(--img,transparent);
+  background-origin:border-box;
+  background-repeat:no-repeat;
+  -webkit-mask:
+     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+   -webkit-mask-size:50.5% 50.5%;
+   -webkit-mask-repeat:no-repeat;
+}
+
+
+.para-xs {
+  @apply  text-[12px];
+  text-shadow: 0.5px 0.5px rgba(0,0,0,0.4);
+}
+.para-xs-white {
+  @apply  text-[12px];
+  text-shadow: 0.5px 0.5px rgba(255,255,255,0.4);
+}
+.para-sm {
+  @apply  text-sm lg:text-[12px] xl:text-sm;
+  text-shadow: 0.5px 0.5px rgba(0,0,0,0.4);
+}
+.para-sm-small-on-mobile {
+  @apply  text-[12px] xl:text-sm;
+  text-shadow: 0.5px 0.5px rgba(0,0,0,0.4);
+}
+
+.heading-1 {
+  @apply text-4xl font-bold;
+}
+
+.heading-2 {
+  @apply text-3xl font-bold;
+}
+
+.heading-3 {
+  @apply text-2xl font-bold;
+}
+
+.whitearrow .splide__arrow svg {
+  fill: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.splide__arrow svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.arrow-out .splide__arrow--next {
+  right: -0.5rem;
+}
+.arrow-out .splide__arrow--prev {
+  left: -0.5rem;
+}
+.arrow-out-xl .splide__arrow--next {
+  @apply -mr-8 lg:-mr-12;
+}
+.arrow-out-xl .splide__arrow--prev {
+  @apply -ml-8 lg:-ml-12;
+}
+
+.sides-hide:after {
+  content: "";
+  @apply block absolute top-0 right-0 w-10 lg:w-20 h-full bg-gradient-to-l from-white via-white to-transparent;
+}
+
+.sides-hide:before {
+  content: "";
+  @apply block absolute top-0 left-0 w-8 lg:w-12 h-full z-[1] bg-gradient-to-r from-white via-white to-transparent;
+}

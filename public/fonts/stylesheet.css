@@ -1,0 +1,30 @@
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('29LTBukra-Bold.woff2') format('woff2'),
+        url('29LTBukra-Bold.woff') format('woff'),
+        url('29LTBukra-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('29LTBukra-BoldItalic.woff2') format('woff2'),
+        url('29LTBukra-BoldItalic.woff') format('woff'),
+        url('29LTBukra-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('29LTBukra-Light.woff2') format('woff2'),
+        url('29LTBukra-Light.woff') format('woff'),
+        url('29LTBukra-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
