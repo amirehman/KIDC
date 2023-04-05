@@ -15,20 +15,20 @@
     }">
     
 
-      <div id="MegaMenu" class="bg-white w-full fixed left-0 top-0 z-10 px-10 ">
+      <div id="MegaMenu" class="bg-white w-full fixed left-0 top-0 z-10 lg:px-10">
 
-          <div class="t-container flex items-start justify-between relative z-[2]">
+          <div class="t-container-menu flex items-start justify-between relative z-[2]">
             <div class="logo mt-[0.7rem]">
               <img src="./images/logo.svg" alt="logo" id="logo">
             </div>
             <div class="flex items-center" id="contentbar">
               <div class="download">
-                <a href="#" class="px-8 h-12 text-sm bg-gray-100 hover:bg-gray-200 flex items-center justify-center space-x-5 font-bold text-t-green">
-                  <span>Download</span>
+                <a href="#" class="w-16 lg:w-auto lg:px-8 h-12 text-sm bg-gray-100 hover:bg-gray-200 flex items-center justify-center lg:space-x-5 font-bold text-t-green">
+                  <span class="hidden lg:inline-block">Download</span>
                   <img src="./images/download.svg" alt="icon" class="h-6">
                 </a>
               </div>
-              <div class="download relative" id="ContentButton">
+              <div class="hidden lg:block relative" id="ContentButton">
                 <button class="w-full px-8 h-12 text-sm bg-t-green text-white font-bold hover:bg-[#005745] transition-all">
                   <span @click="isMegaMenu = !isMegaMenu" id="OpenTableOfContent" class="block absolute inset-0 flex items-center justify-center space-x-5">
                     <span id="OpenTableOfContentSpan">Table of Content</span>
@@ -39,7 +39,10 @@
                   </span>
                 </button>
               </div>
-              <ul class="social pl-5 flex items-center space-x-2">
+              <div id="OpenTableOfContentBurger" class="block lg:hidden">
+                <img src="./images/burger.svg" alt="icon" class="h-12">
+              </div>
+              <ul class="hidden lg:flex pl-5 items-center space-x-2">
                 <li> 
                   <a href="#"> <img src="./images/facebook.svg" alt="icon" class="h-4"> </a>
                 </li>

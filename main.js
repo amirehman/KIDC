@@ -43,7 +43,21 @@ gsap.set(logo, {width: '6.2rem'})
 gsap.set(ContentButton, {width: '15rem'})
 gsap.set(CloseTableOfContent, {display: 'none', opacity: 0})
 
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 500px)", () => {
+
+    gsap.set(logo, {width: '1.5rem', marginLeft: '1rem'})
+    
+  });
+
+
+
 openTableOfContent.addEventListener('click', function() {
+    openMegaMenu ()
+})
+
+OpenTableOfContentBurger.addEventListener('click', function() {
     openMegaMenu ()
 })
 

@@ -43,6 +43,10 @@ body {
 }
 
 
+.t-container-menu {
+  @apply max-w-screen-xl 2xl:max-w-7xl mx-auto md:px-5;
+}
+
 .t-container-md {
   @apply max-w-screen-md 2xl:max-w-7xl mx-auto px-5;
 }
