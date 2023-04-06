@@ -1,5 +1,6 @@
 import './style.css'
 import Alpine from 'alpinejs'
+import Splide from '@splidejs/splide'
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
