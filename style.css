@@ -101,28 +101,28 @@ body {
   margin:10px;
   border:2px solid var(--b);
   background:
-     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,transparent 0) bottom left /50% 50%,
-     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),transparent 0) bottom right/50% 50%,
-     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,transparent 0) top left    /50% 50%,
-     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2px)   ,transparent 0) top right   /50% 50%,
-     var(--img,transparent);
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 2px) ,rgba(0,0,0,0.3) 0) bottom left /50% 50%,
+     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 2px),rgba(0,0,0,0.3) 0) bottom right/50% 50%,
+     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 2px)    ,rgba(0,0,0,0.3) 0) top left    /50% 50%,
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 2px)   ,rgba(0,0,0,0.3) 0) top right   /50% 50%,
+     var(--img,rgba(0,0,0,0.3));
   background-origin:border-box;
   background-repeat:no-repeat;
   -webkit-mask:
-     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+     linear-gradient(  45deg, rgba(0,0,0,0.3) 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+     linear-gradient( -45deg, rgba(0,0,0,0.3) 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+     linear-gradient( 135deg, rgba(0,0,0,0.3) 0 var(--top-left,var(--all))    ,#fff 0) top left,
+     linear-gradient(-135deg, rgba(0,0,0,0.3) 0 var(--top-right,var(--all))   ,#fff 0) top right;
    -webkit-mask-size:50.5% 50.5%;
    -webkit-mask-repeat:no-repeat;
 }
 .curner-box.border-thin {
   border:1px solid var(--b);
   background:
-     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 1px) ,transparent 0) bottom left /50% 50%,
-     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),transparent 0) bottom right/50% 50%,
-     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1px)    ,transparent 0) top left    /50% 50%,
-     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 1px)   ,transparent 0) top right   /50% 50%,
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 1px) ,rgba(0,0,0,0.3) 0) bottom left /50% 50%,
+     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 1px),rgba(0,0,0,0.3) 0) bottom right/50% 50%,
+     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 1px)    ,rgba(0,0,0,0.3) 0) top left    /50% 50%,
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 1px)   ,rgba(0,0,0,0.3) 0) top right   /50% 50%,
      var(--img,transparent);
   background-origin:border-box;
   background-repeat:no-repeat;
@@ -197,4 +197,11 @@ body {
 .sides-hide:before {
   content: "";
   @apply block absolute top-0 left-0 w-8 lg:w-12 h-full z-[1] bg-gradient-to-r from-white via-white to-transparent;
+}
+
+.splide1  .splide__pagination {
+    bottom: -3rem;
+  }
+.splide1 li button.splide__pagination__page {
+  background-color: white;
 }

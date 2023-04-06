@@ -145,8 +145,8 @@ var splide1 = new Splide( '.splide1', {
     perPage: 2,
     gap    : '1rem',
     pagination: false,
-    arrows: true,
-    drag: 'free'
+    arrows: false,
+    pagination: false
 } );
   
 splide1.mount();
@@ -157,7 +157,7 @@ var splide2 = new Splide( '.splide2', {
     gap    : '1rem',
     pagination: false,
     arrows: true,
-    drag: 'free',
+    // drag: 'free',
     breakpoints: {
         900: {
             perPage: 1,
@@ -172,10 +172,10 @@ var splide3 = new Splide( '.splide3', {
     gap    : '1rem',
     pagination: false,
     arrows: true,
-    drag: 'free',
+    // drag: 'free',
     breakpoints: {
         900: {
-            perPage: 2,
+            perPage: 1,
         }
     }
 } );
