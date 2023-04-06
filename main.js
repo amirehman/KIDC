@@ -110,8 +110,6 @@ function openMegaMenu() {
     .fromTo(ContentButton, 0.4, {width: '15rem'}, {width: '5rem'}, 'one')
     .fromTo(openTableOfContent, 0.4, {opacity:1, display:"flex"}, {opacity:0, display:"none"}, 'one')
     .fromTo(CloseTableOfContent, 0.4, {opacity:0, display:"none"}, {opacity:1, display:"flex"}, 'one')
-    .fromTo(OpenTableOfContentBurger, 0.4, {opacity:1, display:"flex", zIndex: 0}, {opacity:0, display:"none", zIndex: -1}, 'one')
-    .fromTo(CloseTableOfContentBurger, 0.4, {opacity:0, display:"none", zIndex: -1}, {opacity:1, display:"flex", zIndex: 1}, 'one')
     .fromTo(contentbar, 0.4, {y: 0}, {y: 30}, 'one')
     .fromTo('.content-box', 0.3, { y: -25, opacity: 0, x: -25 }, { y: 0, opacity: 1, x: 0, stagger: 0.1 }, 'one')
 
@@ -120,7 +118,7 @@ function openMegaMenu() {
         mmtl
         .fromTo(MegaMenu, 0.4, {height: '3rem'}, {height: '100vh'}, 'one')
         .fromTo(MegaContent, 0.4, {opacity: 0, zIndex: -50}, {opacity: 1, zIndex:1}, 'one')
-        .fromTo(logo, 0.4, {y: 0, width: '6.2rem'}, {y: 20, width: '5rem'}, 'one')
+        .fromTo(logo, 0.4, {y: 0, width: '1.5rem'}, {y: 20, width: '5rem'}, 'one')
         .fromTo(ContentButton, 0.4, {width: '15rem'}, {width: '5rem'}, 'one')
         .fromTo(openTableOfContent, 0.4, {opacity:1, display:"flex"}, {opacity:0, display:"none"}, 'one')
         .fromTo(CloseTableOfContent, 0.4, {opacity:0, display:"none"}, {opacity:1, display:"flex"}, 'one')
