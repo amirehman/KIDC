@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/splide.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dubai Police</title>
@@ -238,10 +240,20 @@
       </div>
       <!-- navbar -->
 
-      <section>
+      <section class="relative">
+        <div class="absolute inset-0 z-[1] flex items-end w-full md:bg-gradient-to-b from-transparent via-transparent to-[rgba(0,0,0,0.5)]">
+          <div class="t-container flex items-center h-[40vh] md:h-[30vh] lg:h-[50vh] w-full">
+            <p class="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+              Knowledge, Innovation and <br> Development at the Forefront <br> for a Secure Future!
+            </p>
+          </div>
+        </div>  
         <figure id="videoContainer">
-          <video autoplay muted loop poster="./images/video.jpg">
+          <video class="hidden md:block" autoplay muted loop poster="./images/video.jpg">
             <source src="./video/desktop.mp4" type="video/mp4">
+          </video>
+          <video class="block md:hidden" autoplay muted loop poster="./images/video.jpg">
+            <source src="./video/mobile.mp4" type="video/mp4">
           </video>
         </figure>        
       </section>
