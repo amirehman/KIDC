@@ -27,10 +27,10 @@
               <img src="./images/logo.svg" alt="logo" id="logo">
             </div>
             <div class="flex items-center" id="contentbar">
-              <div class="download">
-                <a href="#" class="w-16 lg:w-auto lg:px-8 h-12 text-sm bg-gray-100 hover:bg-gray-200 flex items-center justify-center lg:space-x-5 font-bold text-t-green">
+              <div class="hidden md:block download">
+                <a href="./download/KIDC-English.pdf" download class="w-20 md:w-16 lg:w-auto lg:px-8 h-20 md:h-12 text-sm bg-gray-100 hover:bg-gray-200 flex items-center justify-center lg:space-x-5 font-bold text-t-green">
                   <span class="hidden lg:inline-block">Download</span>
-                  <img src="./images/download.svg" alt="icon" class="h-6">
+                  <img src="./images/download.svg" alt="icon" class="h-10 md:h-6">
                 </a>
               </div>
               <div class="hidden lg:block relative" id="ContentButton">
@@ -44,12 +44,13 @@
                   </span>
                 </button>
               </div>
-              <div class="relative w-12 h-12">
-                <div id="OpenTableOfContentBurger" class="absolute inset-0 h-12 w-full flex items-center justify-center lg:hidden">
-                  <img src="./images/burger.svg" alt="icon" class="h-12">
+              
+              <div class="relative w-20 h-20 md:h-12">
+                <div id="OpenTableOfContentBurger" class="absolute inset-0 h-20 md:h-12 w-full flex items-center justify-center lg:hidden">
+                  <img src="./images/burger.svg" alt="icon" class="h-full object-cover">
                 </div>
-                <div id="CloseTableOfContentBurger" class="absolute inset-0 h-12 w-full flex items-center justify-center lg:hidden">
-                  <img src="./images/close.svg" alt="icon" class="h-6">
+                <div id="CloseTableOfContentBurger" class="absolute inset-0 h-20 md:h-12 w-full flex items-center justify-center lg:hidden">
+                  <img src="./images/close.svg" alt="icon" class="h-8">
                 </div>
                 </div>
               <ul class="hidden lg:flex pl-5 items-center space-x-2">
@@ -68,10 +69,17 @@
               </ul>
             </div>
           </div>
+          
           <div id="MegaContent" class="site-content absolute inset-0 -z-[1] flex items-center justify-center">
             <div class="w-full t-container">
-              <div class="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-16 md:space-y-0">
-                <div class="flex flex-col space-y-2 md:space-y-8">
+              <div class="block md:hidden my-10">
+                <a href="./download/KIDC-English.pdf" download class="h-16 bg-gray-100 hover:bg-gray-200 flex items-center justify-center space-x-10 font-bold text-t-green rounded-2xl">
+                  <span class="">Download</span>
+                  <img src="./images/download.svg" alt="icon" class="h-10 md:h-6">
+                </a>
+              </div>
+              <div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-16 md:space-y-0">
+                <div class="flex flex-col space-y-4 md:space-y-8">
                   <div class="content-box space-y-4">
                     <div class="flex items-center space-x-2 font-bold">
                       <div class="border-b border-white pb-px">01</div>
@@ -127,7 +135,7 @@
                 </div>
                 <!-- flex -->
               
-                <div class="flex flex-col space-y-2 md:space-y-8">
+                <div class="flex flex-col space-y-4 md:space-y-8">
                   <div class="content-box space-y-4">
                     <div class="flex items-center space-x-2 font-bold">
                       <div class="border-b border-white pb-px">04</div>
@@ -183,7 +191,7 @@
                 </div>
                 <!-- flex -->
               
-                <div class="flex flex-col space-y-2 md:space-y-8">
+                <div class="flex flex-col space-y-4 md:space-y-8">
                   <div class="content-box space-y-4">
                     <div class="flex items-center space-x-2 font-bold">
                       <div class="border-b border-white pb-px">07</div>
@@ -237,7 +245,21 @@
                   <!-- col -->
                 </div>
                 <!-- flex -->
-              </div>              
+              </div>
+              <ul class="flex lg:hidden mt-5 items-center justify-center space-x-3">
+                <li> 
+                  <a href="#"> <img src="./images/facebook.svg" alt="icon" class="h-6"> </a>
+                </li>
+                <li> 
+                  <a href="#"> <img src="./images/instagram.svg" alt="icon" class="h-6"> </a>
+                </li>
+                <li> 
+                  <a href="#"> <img src="./images/twitter.svg" alt="icon" class="h-6"> </a>
+                </li>
+                <li> 
+                  <a href="#"> <img src="./images/linkedin.svg" alt="icon" class="h-6"> </a>
+                </li>
+              </ul>       
             </div>
           </div>
       </div>
