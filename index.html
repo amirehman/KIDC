@@ -12,6 +12,9 @@
   <body>
 
 
+    <div id="before-loading" class="flex items-center justify-center h-screen">
+      <img src="./images/logo.svg" alt="logo" class="animate-pulse w-32">
+    </div>
     <div id="site-wrapper" class="smooth-content" x-data="{
       isMegaMenu: false
     }">
@@ -249,10 +252,10 @@
           </div>
         </div>  
         <figure id="videoContainer">
-          <video class="hidden md:block" autoplay muted loop poster="./images/video.jpg">
+          <video class="hidden md:block" autoplay muted loop  poster="./images/video.jpg">
             <source src="./video/desktop.mp4" type="video/mp4">
           </video>
-          <video class="block md:hidden" autoplay muted loop poster="./images/video.jpg">
+          <video class="block md:hidden" autoplay muted loop poster="./images/mobile-poster.png">
             <source src="./video/mobile.mp4" type="video/mp4">
           </video>
         </figure>        

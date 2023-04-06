@@ -24,6 +24,8 @@ const gotolink = document.querySelectorAll('.gotolink');
 const megablackarrow = document.querySelectorAll('.mega-black-arrow');
 const logo = document.getElementById('logo');
 const contentbar = document.getElementById('contentbar');
+const beforeLoading = document.getElementById('before-loading');
+const siteWrapper = document.getElementById('site-wrapper');
 
 
 gotolink.forEach(element => {
@@ -64,6 +66,7 @@ megablackarrow.forEach((element, i) => {
 });
 
 
+gsap.set(siteWrapper, {display: 'none'})
 gsap.set(MegaMenu, {height: '3rem'})
 gsap.set(MegaContent, {opacity: 0, zIndex: -50})
 gsap.set(logo, {width: '6.2rem'})
@@ -207,3 +210,12 @@ var splide5 = new Splide( '.splide5', {
     }
 } );
 splide5.mount();
+
+
+
+function ready() {
+    gsap.set(beforeLoading, {display: 'none'})    
+    gsap.set(siteWrapper, {display: 'block'})    
+}
+
+document.addEventListener("DOMContentLoaded", ready);
