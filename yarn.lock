@@ -381,10 +381,10 @@ glob@7.1.6:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-"gsap@npm:@gsap/business":
+gsap@^3.11.5:
   version "3.11.5"
-  resolved "https://npm.greensock.com/@gsap%2fbusiness/-/business-3.11.5.tgz#52b4536f72e9d262da2b7ade6fbde6875e12c17a"
-  integrity sha512-4eYfbB7c+s9N+ImkqU5ZoaNEkDm9SEZb6NfHYsvGr5hM4bIN/8wKObbpl+/pNRRPl0XopxRNz4E6hc4a0j76ZA==
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.11.5.tgz#97ef65091f43868be387803f9db277e8cd5bd041"
+  integrity sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==
 
 has@^1.0.3:
   version "1.0.3"
