@@ -55,6 +55,10 @@ megablackarrow.forEach((element, i) => {
         });
         
         
+        megablackarrow.forEach(b => {
+            b.classList.remove('active')
+        });
+        
         let section = element.getAttribute('data-list')
         let list = document.getElementById(section)
 
@@ -62,13 +66,14 @@ megablackarrow.forEach((element, i) => {
 
         if(list.classList.contains('active')){
             list.classList.remove('active')
-            element.classList.remove('rotate-180')
+            // element.classList.remove('rotate-180')
             list.classList.add('hidden')
             list.classList.add('opacity-0')
             list.classList.add('h-0')    
         }else{
-            element.classList.add('rotate-180')
+            // element.classList.add('rotate-180')
             list.classList.add('active')
+            element.classList.add('active')
             list.classList.remove('hidden')
             list.classList.remove('opacity-0')
             list.classList.remove('h-0')    

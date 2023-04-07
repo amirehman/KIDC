@@ -205,3 +205,7 @@ body {
 .splide1 li button.splide__pagination__page {
   background-color: white;
 }
+
+.mega-black-arrow.active {
+  @apply rotate-180;
+}
