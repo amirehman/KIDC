@@ -209,3 +209,9 @@ body {
 .mega-black-arrow.active {
   @apply rotate-180;
 }
+
+
+#mobileVideo {
+  height: 90vh;
+  width: 100vw;
+}

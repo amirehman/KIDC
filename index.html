@@ -12,9 +12,9 @@
   <body>
 
 
-    <div id="before-loading" class="flex items-center justify-center h-screen">
+    <!-- <div id="before-loading" class="flex items-center justify-center h-screen">
       <img src="./images/logo.svg" alt="logo" class="animate-pulse w-32">
-    </div>
+    </div> -->
     <div id="site-wrapper" class="smooth-content" x-data="{
       isMegaMenu: false
     }">
@@ -274,16 +274,13 @@
           </div>
         </div>  
         <figure id="videoContainer">
-          <video class="hidden md:block w-full" autoplay muted loop  poster="./images/video.jpg">
-            <source src="./video/video.mp4" type="video/mp4">
-          </video>
-          <video id="mobileVideo" class="block md:hidden w-full" loop autoplay muted playsinline poster="./images/mobile-poster.png">
-            <source src="./video/mobile.mp4" type="video/mp4">
-          </video>
+          <video id="desktopVideo" class="hidden md:block w-full" autoplay muted loop  poster="./images/video.jpg" src="./video/desktop.mp4" type="video/mp4"></video>
+          <iframe id="mobileVideo" class="block md:hidden" src="https://player.vimeo.com/video/815575791?background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          
         </figure>        
       </section>
       <!-- video -->
-      
+
 
       <section id="section0">
         <img src="./images/slide-1.jpg" alt="slide" class="w-full hidden md:block">

@@ -278,9 +278,3 @@ function ready() {
 document.addEventListener("DOMContentLoaded", ready);
 
 
-const videos = document.getElementsByTagName("video");
-for (const video of videos) {
-    video.setAttribute("playsinline", "");
-    video.setAttribute("muted", "");
-    video.play();
-}
