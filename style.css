@@ -215,3 +215,7 @@ body {
   height: 90vh;
   width: 100vw;
 }
+
+.mega-menu-scroll::-webkit-scrollbar {
+  width: 0px;
+}
